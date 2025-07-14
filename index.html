@@ -5,46 +5,70 @@
   <title>تفعيل GoldHEN - البسملة فون</title>
   <style>
     body {
-      background: url('https://i.imgur.com/2rO07f3.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
-      padding: 50px;
+      padding: 60px 20px;
     }
-    h1 {
-      color: #FFD700;
-      font-size: 36px;
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
+
     .logo {
       width: 150px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #FFD700;
       margin-bottom: 20px;
     }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
     .btn {
-      background-color: #FFD700;
-      color: #111;
-      padding: 15px 30px;
+      background: linear-gradient(90deg, #FFD700, #f7c400);
+      color: #000;
+      padding: 15px 35px;
       font-size: 20px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #FFD700;
     }
+
     .btn:hover {
-      background-color: #fff200;
+      background: #fff200;
+      transform: scale(1.05);
     }
+
     .note {
-      margin-top: 30px;
-      font-size: 18px;
+      margin-top: 40px;
+      font-size: 17px;
       color: #ccc;
     }
   </style>
 </head>
 <body>
   <img src="https://i.imgur.com/3vKJjvZ.png" alt="البسملة فون" class="logo">
-  <h1>ضلعي منا نفعل الهكر للبلي</h1>
-  <p>اضغط على الدكمة جوة لتفعيل الهكر، واذا مدبرتها اتصل على رقمي أفهمك 😎</p>
+  <h1>ضلعي منا نفعل الهكر للبلي 🎮</h1>
+  <p>اضغط على الدكمة جوة لتفعيل الهكر، وإذا مدبرتها اتصل على رقمي أفهمك 😎</p>
   <a class="btn" href="https://github.com/shadow9897/goldhen-basmala/raw/main/goldhen_2.3_900.bin">تفعيل الهكر الآن</a>
   <p class="note">📞 07723939914 - مركز البسملة فون</p>
-  <p style="margin-top: 40px;">© 2025 - البسملة فون | كل الحقوق محفوظة</p>
+  <p style="margin-top: 30px;">© 2025 - البسملة فون | كل الحقوق محفوظة</p>
 </body>
 </html>
