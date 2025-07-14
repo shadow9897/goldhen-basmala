@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>البسملة فون - تفعيل الهكر</title>
- <style>
-  body {
-    background: url('https://images5.alphacoders.com/132/1320546.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    ...
-  }
-</style>
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>البسملة فون</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.imgur.com/xjpG9pn.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 50px;
+      backdrop-filter: brightness(0.6);
     }
+
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      max-width: 400px;
+    }
+
     h1 {
-      color: #FFD700;
-      font-size: 36px;
-      margin-top: 20px;
+      margin: 0 0 10px 0;
+      font-size: 3em;
+      font-weight: bold;
     }
-    .logo {
-      width: 180px;
-      border-radius: 12px;
-      margin-bottom: 20px;
+
+    p {
+      margin: 0 0 20px 0;
+      font-size: 1.2em;
     }
-    .btn {
-      background-color: #FFD700;
-      color: #111;
+
+    button {
+      background-color: #28a745;
+      border: none;
       padding: 15px 30px;
-      font-size: 20px;
-      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
       border-radius: 10px;
-      transition: 0.3s;
-      display: inline-block;
-      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
     }
-    .btn:hover {
-      background-color: #fff200;
+
+    button:hover {
+      background-color: #218838;
     }
-    .note {
-      margin-top: 30px;
-      font-size: 18px;
-      color: #eee;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 10px;
-      border-radius: 10px;
-      display: inline-block;
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 1em;
+      background: rgba(0,0,0,0.4);
+      padding: 8px 0;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/shadow9897/goldhen-basmala/main/A_logo_for_a_gaming_store_named_%22%D8%A7%D9%84%D8%A8%D8%B3%D9%85%D9%84%D8%A9_%D9%81%D9%88%D9%86%22_(Al-.png" alt="البسملة فون" class="logo">
-  <h1>ضلعي منا نفعل الهكر للبلي</h1>
-  <p class="note">اضغط على الدكمة جوة لتفعيل الهكر، واذا مدبرتها اتصل على رقمي أفهمك: <strong>07723939914</strong></p>
-  <a class="btn" href="https://github.com/shadow9897/goldhen-basmala/raw/main/goldhen_2.3_900.bin">تفعيل الهكر الآن</a>
-  <p class="note" style="margin-top: 40px;">يفضّل تفتح هذا الموقع من بلايستيشن 4 حتى يشتغل التفعيل بشكل صحيح</p>
+  <div class="container">
+    <h1>البسملة فون</h1>
+    <p>هذا الموقع لتفعيل الهكر لجهازك</p>
+    <button id="activateBtn">تفعيل</button>
+  </div>
+
+  <footer>
+    المركز - الزعفرانية، الأربع شوارع، مقابل شاورما ونص، مجاور بيبي لاند | 07723939914
+  </footer>
+
+  <script>
+    const btn = document.getElementById('activateBtn');
+    btn.addEventListener('click', () => {
+      alert('الكولد هين تم تفعيله مباشر');
+    });
+  </script>
 </body>
 </html>
